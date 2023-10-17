@@ -42,6 +42,25 @@
     border-left: 9px solid #fbbf24;
     height: 160px;
     box-shadow: 5px 5px 5px #00000030;
+    display: grid;
+    grid-template: 15px 30px 40px 50px/ 200px 40px 40px;
+    row-gap: 10px;
+}
+.card>p{
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.projectIcons {
+    gap: 20px;
+    color: #000000;
+    justify-content: flex-end;
+    /* margin-top: 30px; */
+    align-items: end;
+    display: flex;
+    grid-row: 4;
+    grid-column: 3;
+    margin-top: 20px;
 }
 *{
     /* border: 1px solid red; */
@@ -59,7 +78,7 @@
     column-gap: 0%;
     padding-left: 3rem;
     background-color: white;
-    box-shadow: 0 3px 0px #00000030;
+    box-shadow: 0 3px 3px #00000030;
     padding-top: 1rem;
     row-gap: 1.5rem;
 }
